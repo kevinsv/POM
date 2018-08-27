@@ -1,13 +1,10 @@
 import getLastOpenedWindowHandle from '../utils/getLastOpenedWindowHandle';
 
-module.exports = (type, done) => {
+module.exports = (type) => {
     if (browser.windowHandles().value.length === 1) {
-        return done();
     }
 
     let lastWindowHandle = getLastOpenedWindowHandle();
     browser.window(lastWindowHandle);
     browser.close();
-
-    done();
 };

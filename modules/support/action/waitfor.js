@@ -9,10 +9,9 @@
  * @param  {String}   falseState               Check for opposite state
  * @param  {String}   state                    State to check for (default
  *                                             existence)
- * @param  {Function} done                     Function to execute when finished
  */
 module.exports =
-(elem, obsolete, ms, isWaitingOnSpecificState, falseState, state, done) => {
+(elem, obsolete, ms, isWaitingOnSpecificState, falseState, state) => {
     /**
      * Maximum number of milliseconds to wait, default 3000
      * @type {Int}
@@ -56,6 +55,4 @@ module.exports =
     }
 
     browser[command](elem, intMs, boolFalseState);
-
-    done();
 };

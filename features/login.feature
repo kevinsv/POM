@@ -4,7 +4,7 @@ Feature: Login test
 
         Given I am on the Login page
 
-    Scenario Outline: Login Synapse
+    Scenario Outline: Login
         When I login with username and password <user> <password> into the text box
         Then I check that authentication was successful
 

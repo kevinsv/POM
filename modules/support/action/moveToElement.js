@@ -4,9 +4,8 @@
  * @param  {String}   obsolete If we need to add an offset this is set
  * @param  {String}   x        X coordinate to move to
  * @param  {String}   y        Y coordinate to move to
- * @param  {Function} done     Function to execute when finished
  */
-module.exports = (element, obsolete, x, y, done) => {
+module.exports = (element, obsolete, x, y) => {
     /**
      * X coordinate
      * @type {Int}
@@ -20,6 +19,4 @@ module.exports = (element, obsolete, x, y, done) => {
     const intY = parseInt(y, 10) || undefined;
 
     browser.moveToObject(element, intX, intY);
-
-    done();
 };

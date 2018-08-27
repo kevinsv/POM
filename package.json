@@ -3,7 +3,7 @@
     "version": "1.1.1",
     "description": "UI E2E tests using WebdriverIO, Cucumber and Page Object Model",
     "private": true,
-    "author": "Kevin Salgado Vega",
+    "author": "Kevin Salgado",
     "license": "MIT",
     "scripts": {
         "test:ci": "wdio ./wdio.ci.conf.js",

@@ -86,7 +86,7 @@ are separated in `given`, `when` and `then`.
 
 You define your snippet using regular expressions. This is pretty powerful as it allows you to create complex
 sentences with multiple options. Everything that's within `"([^"]*)?"` gets captured and appended to the
-callback. The last argument is always a callback function that you need to call when your step is done.
+callback.
 You can access the browser and your WebdriverIO instance with `browser`.
 
 To assert values this boilerplate project comes with a [Chai](http://chaijs.com/) integration.

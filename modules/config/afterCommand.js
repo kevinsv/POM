@@ -1,6 +1,3 @@
-/*
- * © Copyright 2017, Prevalent Inc., All Rights reserved.
- */
 let fs = require('fs');
 let path = require('path');
 

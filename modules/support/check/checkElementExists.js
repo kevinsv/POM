@@ -2,9 +2,8 @@
  * Check if the given element exists
  * @param  {String}   isExisting Whether the element should be existing or not
  * @param  {String}   elem       Element selector
- * @param  {Function} done       Function to execute when finished
  */
-module.exports = (isExisting, elem, done) => {
+module.exports = (isExisting, elem) => {
     /**
      * The number of elements found in the DOM
      * @type {Int}
@@ -25,5 +24,5 @@ module.exports = (isExisting, elem, done) => {
             );
     }
 
-    done();
+
 };

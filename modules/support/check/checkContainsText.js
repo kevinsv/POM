@@ -4,9 +4,8 @@
  * @param  {String}   element   Element selector
  * @param  {String}   falseCase Whether to check if the content contains text
  *                              or not
- * @param  {Function} done      Function to execute when finished
  */
-module.exports = (type, element, falseCase, done) => {
+module.exports = (type, element, falseCase) => {
     /**
      * The command to perform on the browser object
      * @type {String}
@@ -24,6 +23,4 @@ module.exports = (type, element, falseCase, done) => {
     } else {
         expect(text).to.be.empty();
     }
-
-    done();
 };

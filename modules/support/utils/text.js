@@ -1,7 +1,3 @@
-/*
- * © Copyright 2017, Prevalent Inc., All Rights reserved.
- */
-
 export function makeShort(text, limit = 20) {
     text = text.slice(0, limit);
     let spacePosition = text.lastIndexOf(' ');

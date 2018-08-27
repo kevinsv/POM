@@ -1,7 +1,3 @@
-/*
- * © Copyright 2017, Prevalent Inc., All Rights reserved.
- */
-
 let overwriteBrowserCommand = require('../support/utils/overwriteBrowserCommand');
 let supportIE = require('../support/utils/supportIE');
 let chai = require('chai');

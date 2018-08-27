@@ -5,7 +5,7 @@ let afterCommand = require('./modules/config/afterCommand');
 let {
     BROWSER,
     TEST_BROWSER,
-    BROWSER_BASE_URL = 'https://develop.synapseqa.com' //Update this with your baseURL
+    BROWSER_BASE_URL = 'https://google.com' //Update this with your baseURL
 } = process.env;
 
 global.isIE = [BROWSER, TEST_BROWSER].includes('internet explorer');

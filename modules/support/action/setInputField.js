@@ -4,9 +4,8 @@
  * @param  {String}   method  The method to use (add or set)
  * @param  {String}   value   The value to set the element to
  * @param  {String}   element Element selector
- * @param  {Function} done    Function to execute when finished
  */
-module.exports = (method, value, element, done) => {
+module.exports = (method, value, element) => {
     /**
      * The command to perform on the browser object (addValue or setValue)
      * @type {String}
@@ -14,6 +13,4 @@ module.exports = (method, value, element, done) => {
     const command = (method === 'add') ? 'addValue' : 'setValue';
 
     browser[command](element, value);
-
-    done();
 };

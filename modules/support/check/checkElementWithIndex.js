@@ -1,6 +1,5 @@
-module.exports = (element, index, done) => {
+module.exports = (element, index) => {
 
     browser.elements(element).value[index].getText();
 
-    done();
 };

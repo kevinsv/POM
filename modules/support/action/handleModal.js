@@ -3,9 +3,8 @@
  * @param  {String}   action    Action to perform on the modal (accept, dismiss,
  *                              text)
  * @param  {String}   modalType Type of modal (alertbox, confirmbox, prompt)
- * @param  {Function} done      Function to execute when finished
  */
-module.exports = (action, modalType, done) => {
+module.exports = (action, modalType) => {
     /**
      * The command to perform on the browser object
      * @type {String}
@@ -20,6 +19,4 @@ module.exports = (action, modalType, done) => {
     }
 
     browser[command]();
-
-    done();
 };

@@ -1,9 +1,8 @@
 /**
  * Close all but the first tab
  * @param  {String}   windowType Type of object to close (window or tab)
- * @param  {Function} done       Function to execute when finished
  */
-module.exports = (windowType, done) => {
+module.exports = (windowType) => {
     /**
      * Get all the window handles
      * @type {Object}
@@ -16,6 +15,4 @@ module.exports = (windowType, done) => {
             browser.switchTab(handle).close();
         }
     });
-
-    done();
 };

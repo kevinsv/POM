@@ -1,7 +1,3 @@
-/*
- * © Copyright 2017, Prevalent Inc., All Rights reserved.
- */
-
 import {isIE} from '../utils/supportIE';
 
 export default function getLastOpenedWindowHandle() {

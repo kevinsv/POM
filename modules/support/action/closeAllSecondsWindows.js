@@ -1,8 +1,4 @@
-/*
- * © Copyright 2017, Prevalent Inc., All Rights reserved.
- */
-
-module.exports = (windowType, done) => {
+module.exports = (windowType) => {
     let windowHandles = browser.windowHandles().value;
     // console.log('windowHandles', windowHandles);
 
@@ -21,6 +17,4 @@ module.exports = (windowType, done) => {
 
     browser.switchTab(global.mainWindowHandle);
     browser.pause(5000);
-
-    done();
 };

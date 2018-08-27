@@ -1,7 +1,3 @@
-/*
- * © Copyright 2017, Prevalent Inc., All Rights reserved.
- */
-
 function click(selector) {
     let button = browser.selectorExecute(selector, function(elements) {
         elements[0].click();
@@ -12,7 +8,6 @@ function click(selector) {
 }
 
 function setValue(selector, value) {
-    // code from https://github.com/vitalyq/react-trigger-change/blob/master/lib/change.js
     let input = browser.selectorExecute(selector, function(elements, value) {
         var event, descriptor;
         var input = elements[0];
